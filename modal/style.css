@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: silver;
+}
+
+#overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 100;
+}
+
+#modal {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 370px;
+    padding-inline: 20px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    gap: 1rem;
+    z-index: 101;
+    border-radius: 12px;
+}
+
+.title{
+    font-size: 2rem;
+    font-family: cursive;
+    margin-inline-start: 1rem;
+    margin-block-start: 1rem;
+    color: sienna;
+}
+
+.content{
+    font-size: 1rem;
+    margin-inline: auto;
+}
+
+#openModal{
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+}
+
+#closeModal{
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+}
